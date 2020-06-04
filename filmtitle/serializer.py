@@ -1,13 +1,17 @@
 from rest_framework import serializers
-from .models import Film
 
-
-# class FilmSerializer(serializers.Serializer):
-#     # id = serializers.CharField()
-#     # title = serializers.CharField()
-#     rusname = serializers.CharField()
 
 class GhibliSerializer(serializers.Serializer):
     id = serializers.CharField()
     title = serializers.CharField()
     rusname = serializers.CharField()
+    description = serializers.CharField()
+    director = serializers.CharField()
+    release_date = serializers.CharField()
+    producer = serializers.CharField()
+    rt_score = serializers.CharField()
+    people = serializers.CharField()
+    species = serializers.CharField()
+    locations = serializers.CharField()
+    vehicles = serializers.CharField()
+    url = serializers.CharField()
